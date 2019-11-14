@@ -26,9 +26,9 @@ class Application
       item_to_add = req.params["item"]
       if @@items.include?(item_to_add)
         @@items << item_to_add
-      else 
+      else
         resp.write "We don't have that item"
-      end 
+      end
     else
       resp.write "Path Not Found"
     end
